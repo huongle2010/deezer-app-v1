@@ -3016,3 +3016,36 @@
             type: "track"
         }
     ];     
+
+
+    // todo
+    // Récupèrer le class .album-list dans HTML
+        const albumList = document.querySelector ('.album-list');
+    // parcour element de Objet data
+         data.forEach ((element) =>{
+            //  si le nome de artist est Eminem
+            if (element.artist.name == 'Eminem'){
+                // Déclarer une varible 'card' et stoker le class "card" de boostrap et ajouter les element de objet (image, titre et tracklist, preview)
+                const card = `
+                <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="${element.album.cover_medium}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">${element.title}</h5>
+                    <a class="btn btn-primary" href="${element.album.tracklist}" role="button">Track Lists</a>
+                    <audio controls src="${element.preview}"></audio>
+                </div> `
+                // adjouter le class card sur le class albumList dans HTML
+                albumList .insertAdjacentHTML('beforeend', card);
+            }
+          
+     });
+    
+     
+  
+   
+
+
+    
+    
+
+

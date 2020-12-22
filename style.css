@@ -1,0 +1,102 @@
+body{
+    margin: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    border: rgb(165, 160, 160) solid 1px;
+  
+}
+.logo{
+    margin-left: 20px;
+    margin-top: 10px;
+   
+}
+.logo img {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    margin-top: 28px;
+    margin-left: 50px;
+    
+}
+.logo p {
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+li {
+    list-style: none;
+    padding: 20px;
+}
+
+h2{ 
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.banner img{
+    border-radius: 50%;
+    width: 250px;
+    height: 260px;
+    margin-top: 30px;
+}
+.artist-photo{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+.artist{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.artist p{
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.artist span {
+    color: white;
+    font-size: 15px;
+}
+.banner {
+    position: relative;
+    height: 400px;
+    border: 1px solid rgb(165, 160, 160);
+    background-color: #32323D;
+  } 
+  .icon {
+      color: red;
+  }
+  .album-list{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      height: auto;
+  }
+  audio {
+      width: 260px;
+      margin-top: 30px;
+  }
+  .card{
+      height: 486px;
+      align-items: center;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+  
+  
